@@ -45,8 +45,8 @@
             required
           />
         </validate>
-        <field-messages name="email" show="$dirty">
-          <div slot="required" class="alert alert-danger my-1">el email es requerido</div>
+        <field-messages name="importe" show="$dirty">
+          <div slot="required" class="alert alert-danger my-1">el importe es requerido</div>
           <div slot="number" class="alert alert-danger my-1">importe no válido</div>
         </field-messages>
 
