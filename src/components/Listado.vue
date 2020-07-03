@@ -37,12 +37,7 @@
     name: 'Listado',
     props: [],
     mounted () {
-          axios.get(url)
-          .then(res => {
-              console.log(res.data)
-              this.formData = res.data})
-          .catch(error=>{
-              console.log('error get', error)})
+          this.listar()
     },
     data () {
       return {
@@ -50,7 +45,14 @@
       }
     },
     methods: {
-        
+        listar(){
+          axios.get(url)
+          .then(res => {
+              console.log(res.data)
+              this.formData = res.data})
+          .catch(error=>{
+              console.log('error get', error)})
+        }
     },
     computed: {
      
@@ -62,6 +64,7 @@
 
 <style scoped lang="css">
   .src-components-listado {
+
 
   }
 </style>
